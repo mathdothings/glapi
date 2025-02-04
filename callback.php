@@ -24,6 +24,7 @@ if (isset($_GET['code'])) {
     $userInfo = $oauthService->userinfo->get();
 
     // Output user info (or handle the data as needed)
+    // echo '<a href="' . $loginUrl . '">Login with Google</a>';
     echo "<script src='https://accounts.google.com/gsi/client' async></script>";
     echo 'User Info: <br>';
     echo 'ID: ' . $userInfo->id . '<br>';
